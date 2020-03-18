@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<title>Carlos das placas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/w3.css">
+
+<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./img/capa.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+.gal img{
+	width:100%;
+	height:30vw;
+	object-fit:	cover;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    
+	<a href="#home" class="w3-left w3-button">
+    <img src="./img/logo2.png" height="26px" style="padding-right:4px">Carlos das Placas</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Quem Somos</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Serviços</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Galeria</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Clientes</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contato</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Quem Somos</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Serviços</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Galeria</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Clientes</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contato</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+<div class="w3-display-topleft w3-image" style="padding-top:70px" >
+      <img src="./img/logo2.png" width="150px" height="150px" >
+</div>
+  <div class="w3-display-bottomleft  w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-blackfaded w3-hide-small" style="padding:10px">PIONEIRA EM PLACAS DE CARNAVAL</span>
+    <span class="w3-xxlarge w3-blackfaded w3-hide-large w3-hide-medium">PIONEIRA EM PLACAS DE CARNAVAL</span><br>
+    <span class=" w3-blackfaded w3-large" style="padding:10px">Peça seu orçamento através de nosso site</span>
+    <p><a href="#contact" class="w3-button w3-white w3-padding-large w3-large w3-margin-top .w3-opacity-min w3-hover-opacity-off">Entre em contato</a></p>
+  </div> 
+
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">QUEM SOMOS</h3>
+  <p class="w3-center w3-large">Empresa com mais de 25 anos no mercado, possuímos o maior acervo de formas, facilitando sua criatividade na hora de montar sua fantasia ou alegoria. Nosso foco é fazer do seu carnaval o melhor possível. Fabricamos placas de Acetato e em EVA de diversas cores e gramaturas que podem ser utilizadas para enriquecer a beleza do seu carnaval.</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <img src="./img/produto_brasileiro.png" class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" style="width:64px" style="padding:-5px"></i>
+      <p class="w3-large">Brasileiro</p>
+     
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo w3-text-red"></i>
+      <p class="w3-large">Variedade</p>
+    
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo w3-grey"></i>
+      <p class="w3-large">Qualidade</p>
+      
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-user w3-margin-bottom w3-jumbo w3-text-blue"></i>
+      <p class="w3-large">Atendimento</p>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Nós sabemos sua necessidade</h3>
+      <p>Não usamos acetatos importados da China. Nosso material é fabricado no Brasil, sendo mantemos o controle de qualidade e  agilidade na entrega. Fornecemos Acetato e EVA de diversas cores e podemos auxiliá-lo a escolher o melhor material para sua festa ficar ainda mais bonita. </p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Veja nossos trabalhos</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="./img/formas.jpg" alt="Formas" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Produtos</h3>
+  <p class="w3-center w3-large">Estes são os produtos que fornecemos</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="./img/bobina_acetato.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Bobinas de Acetato</h3>
+          <p class="w3-opacity">Variações de cor</p>
+          <p>Cores Metalizadas, irizadas, Holográficas, Flocadas, Fluor e/ou Neon, Cristal (transparente), Preta e Branca</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contato</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="./img/placa_acetato.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Placas de Acetato</h3>
+          <p class="w3-opacity">Gramaturas</p>
+          <p>Fornecemos placas ou bobinas nas gramaturas: 0,25/0,40/0,50/0,70. Entre em contato para maiores detalhes</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contato</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="./img/bobinas_EVA.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Bobinas de EVA</h3>
+          <p class="w3-opacity">Espessuras</p>
+          <p>O EVA pode ser fornecido com 2mm ou 3mm de espessura de modo a atender melhor suas necessidades</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contato</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="./img/placas_eva.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Placas de EVA</h3>
+          <p class="w3-opacity">Variedade</p>
+          <p>Fornecemos produtos de diversas cores e formas variadas, entre em contato para saber mais sobre as possibilidades.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contato</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-blue w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">Brasil</span>
+    <br>Entregas em todo o território
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">Eventos Diversos</span>
+    <br>Carnaval, Natal, Ano Novo
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">Desde 1988</span>
+    <br>Atuando no mercado
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">Rápida entrega</span>
+    <br>Temos produtos em estoque
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container gal" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Galeria</h3>
+  <p class="w3-center w3-large">Veja nosso trabalho</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="./img/gal1.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal2.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal3.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal4.jpg"  onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="./img/gal5.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal6.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal7.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal8.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="./img/gal9.jpeg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal10.jpeg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal11.jpeg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal12.jpeg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="./img/gal13.jpeg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal14.jpeg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal15.jpeg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./img/gal16.jpeg" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-blue" style="padding:128px 16px" id="pricing">
+  <h3>Nossos Clientes</h3>
+  <p class="w3-large">Estes são algumas das escolas de samba que compram nossos produtos.</p>
+  <div class="w3-row-padding w3-hide-small w3-hide-medium"  style="margin-top:64px">
+    <div class="w3-col s3">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-padding-16">Portela (RJ)</li>
+        <li class="w3-padding-16">Império da Tijuca (RJ)</li>
+		<li class="w3-padding-16">	Mocidade Unida da Glória (ES)</li>
+      </ul>
+    </div>
+    <div class="w3-col s3">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-padding-16">Renascer de Jacarepaguá (RJ)</li>
+        <li class="w3-padding-16">Unidos de Lucas (RJ)</li>
+		<li class="w3-padding-16">Unidos da Piedade(ES)</li>
+      </ul>
+    </div>
+    <div class="w3-col s3">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-padding-16">Lins Imperial (RJ)</li>
+        <li class="w3-padding-16">Sabiá (RJ)</li>
+		<li class="w3-padding-16">Chega mais(ES)</li>
+        </ul>
+    </div>
+    <div class="w3-col s3">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-padding-16">Araribóia (RJ)</li>
+        <li class="w3-padding-16">Chegou o que faltava (ES)</li>
+        <li class="w3-padding-16">E muito outras...</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding  w3-hide-large"  style="margin-top:64px">
+    <div >
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-padding-16">Portela (RJ)</li>
+		<li class="w3-padding-16">Império da Tijuca (RJ)</li>
+		<li class="w3-padding-16">Renascer de Jacarepaguá (RJ)</li>
+		<li class="w3-padding-16">Unidos de Lucas (RJ)</li>
+		<li class="w3-padding-16">Lins Imperial (RJ)</li>
+		<li class="w3-padding-16">Sabiá (RJ)</li>
+        <li class="w3-padding-16">Araribóia (RJ)</li>
+		
+        <li class="w3-padding-16">Mocidade Unida da Glória (ES)</li>
+        <li class="w3-padding-16">Unidos da Piedade(ES)</li>
+        <li class="w3-padding-16">Chega mais(ES)</li>
+        <li class="w3-padding-16">Chegou o que faltava (ES)</li>
+        <li class="w3-padding-16">Muitas Outras...</li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">Contato</h3>
+  <p class="w3-center w3-large">Quer um orçamento? Nos envie uma mensagem:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Rio de Janeiro, RJ</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefone: (21) 98515-7031</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: carlos.wacuo@gmail.com</p>
+      <br>
+
+    </div>
+    <div class="w3-half">
+      <!-- Add Google Maps -->
+      <div id="googleMap"  style="width:100%;height:300px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Início</a>
+  <p>Desenvolvido por TecLahr </p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(-22.8912817, -43.2171337);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, 
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpRHeFLk_zba_Z67fLw984-r4tRTKy6xE&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
