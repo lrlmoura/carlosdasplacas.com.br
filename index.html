@@ -28,7 +28,26 @@ body, html {
 	object-fit:	cover;
 }
 </style>
-<body>
+
+<body onload="document.getElementById('Open').click();" >
+<a href="#abrirModal" id="Open">Open Modal</a>
+
+<div id="abrirModal" class="modal">
+	<div>
+  <a href="#fechar" title="Fechar" class="fechar">x</a>
+    <div class="w3-row-padding w3-section">
+    <div class="w3-col l4 m4">
+      <img src="./img/mascara.jpeg" class="imgmodal" alt="">
+    </div>
+	<div class="w3-col l8 m8">
+  <h2>Comunicado COVID-19</h2>
+  <p>Neste momento de dificuldade, temos em nosso estoque bobinas de acetato para a confecção de máscaras (EPI)  e proteção para caixas de atendimento ao público</p>
+  <p>Para fazer seu orçamento entre em contato conosco</p>
+  <h3>(21) 98515-7031</h3>
+	</div>
+	</div>
+	</div>
+</div>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -78,6 +97,7 @@ body, html {
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
+
   <h3 class="w3-center">QUEM SOMOS</h3>
   <p class="w3-center w3-large">Empresa com mais de 25 anos no mercado, possuímos o maior acervo de formas, facilitando sua criatividade na hora de montar sua fantasia ou alegoria. Nosso foco é fazer do seu carnaval o melhor possível. Fabricamos placas de Acetato e em EVA de diversas cores e gramaturas que podem ser utilizadas para enriquecer a beleza do seu carnaval.</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
